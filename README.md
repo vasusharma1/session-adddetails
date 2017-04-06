@@ -15,6 +15,8 @@ ember-cli
 ember-pouch       
 ember-simple-auth     
 couchdb server      
+bower_components(pouchdb, pouchdb-authentication)         
+
 
 # Deployment
 ember s
