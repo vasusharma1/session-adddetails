@@ -1,0 +1,17 @@
+<form {{action 'authenticate' on='submit'}}>
+		<div class="form-group">
+		  <label for="identification">Email</label>
+	{{input id='identification' placeholder='Enter email' value=model.identification}}
+		</div>
+	
+	<div class="form-group">
+	  <label for="password">Password</label>
+{{input id='password' placeholder='Enter Password' type='password' value=model.password}}
+	</div>
+<div>
+		  <button class="btn btn-solid" type="Submit">Login</button>
+</div>
+	  {{#if errorMessage}}
+	    <p>{{errorMessage}}</p>
+	  {{/if}}
+</form>

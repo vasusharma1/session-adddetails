@@ -1,0 +1,10 @@
+{{#if session.currentUser}}<!-- from session service -->
+Hi-> {{session.user.name}} <br/>
+
+	<a {{action 'invalidateSession'}}>Logout</a>
+
+{{else}}
+  		<h2>It's nothing in here</h2>
+  		Login or Register
+{{/if}}
+

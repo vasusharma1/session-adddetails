@@ -1,0 +1,14 @@
+<h1>Add Details</h1>
+
+<form {{action 'savedetails' on="submit"}}>Save Details
+	<div>
+		<label>Address:-></label> {{input value=address class="form-control"}}
+	</div>
+	<div>
+		<label>Interests:-></label> {{input value=interests class="form-control"}}	
+	</div>
+	<div>
+		<label>Skills:-></label> {{input value=skills class="form-control"}}
+	</div>		
+	<input class="btn btn-primary" type="submit">
+</form>
